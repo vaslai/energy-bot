@@ -2,7 +2,7 @@ import streamlit as st
 import google.generativeai as genai
 
 # --- Ρυθμίσεις Σελίδας ---
-st.set_page_config(page_title="Pilot Assistant 1-15", page_icon="👨‍✈️")
+st.set_page_config(page_title="Pilot Assistant 1-15", page_icon="⚡")
 st.title("⚡ Pilot Assistant 1-15")
 st.caption("Powered by Gemini 2.0 Flash (Online)")
 
@@ -68,3 +68,4 @@ if prompt := st.chat_input("Ρώτησέ με..."):
     except Exception as e:
 
         st.error(f"Υπήρξε σφάλμα: {e}")
+
