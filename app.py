@@ -2,9 +2,9 @@ import streamlit as st
 import google.generativeai as genai
 
 # --- Ρυθμίσεις Σελίδας ---
-st.set_page_config(page_title="Pilot Assistant 1-15", page_icon="⚡")
-st.title("⚡ Pilot Assistant 1-15")
-st.caption("Powered by Gemini 2.0 Flash (Online)")
+st.set_page_config(page_title="HEDNO Pilot Assistant 1-15", page_icon="⚡")
+st.title("⚡ HEDNO Pilot Assistant 1-15")
+st.caption("Powered by DEK")
 
 # --- ΑΣΦΑΛΗΣ ΣΥΝΔΕΣΗ (Το σημαντικό σημείο) ---
 # Ελέγχουμε αν υπάρχει το κλειδί στις "μυστικές ρυθμίσεις" του Cloud
@@ -68,5 +68,6 @@ if prompt := st.chat_input("Ρώτησέ με..."):
     except Exception as e:
 
         st.error(f"Υπήρξε σφάλμα: {e}")
+
 
 
